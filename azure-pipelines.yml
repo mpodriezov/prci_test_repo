@@ -12,3 +12,10 @@ pool: default
 steps:
 - checkout: self
   fetchTags: true
+
+- task: InvokeRESTAPI@1
+  inputs:
+    connectionType: 'connectedServiceName'
+    serviceConnection: 'Google'
+    method: 'GET'
+    waitForCompletion: 'false'
