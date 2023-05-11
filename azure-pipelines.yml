@@ -7,3 +7,7 @@ trigger:
 - main
 
 pool: default
+
+steps:
+- checkout: self
+  fetchTags: true
