@@ -7,11 +7,9 @@ trigger:
 - main
 - other
 
-pool: default
+#pool: default
+pool: server
 
-steps:
-- checkout: self
-  fetchTags: true
 
 - task: InvokeRESTAPI@1
   inputs:
