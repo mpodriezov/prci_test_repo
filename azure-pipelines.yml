@@ -13,7 +13,7 @@ steps:
 - checkout: self
   fetchTags: true
 
-- task: InvokeRestAPI@1
+- task: InvokeRESTAPI@1
   inputs:
     connectionType: 'connectedServiceName'
     serviceConnection: 'Google'
